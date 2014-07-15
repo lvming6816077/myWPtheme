@@ -1,0 +1,226 @@
+/*  
+
+Theme Name: Tutorial
+
+Theme URI: http://www.wpdesigner.com
+
+Description: This is my theme for a tutorial.
+
+Version: 1.0
+
+Author: Small Potato
+
+Author URI: http://www.wpdesigner.com/
+
+
+/* reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,top-nav,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, top-nav, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+/* start editing from here */
+a{text-decoration:none;}
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */
+.vertical-base{ vertical-align:baseline;}/* vertical align baseline */
+.vertical-top{  vertical-align:top;}/* vertical align top */
+nav.vertical ul li{ display:block;}/* vertical top-nav */
+nav.horizontal ul li{ display: inline-block;}/* horizontal top-nav */
+img{max-width:100%;}
+/*end reset*/
+body {
+    font-family: 'Helvetica Neue', Helvetica, 'Microsoft YaHei', Arial, SimHei, sans-serif;
+}
+.clearfix {
+    display: table;
+    content: " ";
+    clear:both;
+}
+#header {
+    width: 100%;
+    height: 80px;
+    background-color: #343434;
+    box-shadow: 0 0 4px #000;
+}
+.header-inner {
+    width: 960px;
+    height: 100%;
+    margin: 0 auto;
+}
+.header-logo {
+    float: left;
+    color: #C0C0C0;
+    /*text-shadow: 1px 0 20px #fff;*/
+}
+.header-logo-title {
+    font-size: 32px;
+    margin-top: 17px;
+    text-align: center;
+}
+.header-logo-text {
+    font-size: 11px;
+    text-shadow: none;
+    text-align: center;
+}
+#nav {
+    float: right;
+    height: 100%;
+}
+.nav-menu {
+    
+}
+.nav-menu {
+    padding-top: 37px;
+    list-style: none;
+}
+.nav-menu >li {
+    width: 74px;
+    float:left;
+    margin-left: 30px;
+    font-size: 17px;
+
+}
+.nav-menu >li a {
+    text-decoration: none;
+    color:#eee;
+}
+.nav-menu >li a:hover {
+    color:#C0C0C0;
+}
+.nav-menu >li .sub-menu {
+    display: none;
+    position: relative;
+    top: 22px;
+    left: -50px;
+    width: 130px;
+    list-style: none;
+    padding-left: 0;
+    padding: 5px;
+    background-color: #343434;
+    text-align: center;
+    box-shadow: 0 0 4px #000;
+}
+.nav-menu >li .sub-menu >li a {
+    font-size: 13px;
+}
+.nav-menu >li .sub-menu >li {
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.nav-menu >li .sub-menu >li:hover {
+    border-radius: 2px;
+    background-color: #006899;
+}
+
+.menu-item-has-children {
+    position: relative;
+}
+.nav-menu .menu-item-has-children:hover .sub-menu {
+    display: block;
+}
+.header-search {
+    float: right;
+    margin-top: 35px;
+    margin-left: 40px;
+    position: relative;
+}
+input.search-field {
+    width: 120px;
+    border: 1px solid rgb(32, 32, 32);
+    outline: none;
+    border-radius: 2px;
+    background-color: rgb(94, 94, 94);
+    height: 25px;
+    text-indent: 2px;
+    color: #eee;
+}
+.header-search i {
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    color: #eee;
+    z-index: 1;
+    cursor: pointer;
+}
+.header-search i:hover {
+    color: #C0C0C0;
+}
+i.black {
+    color:rgb(36, 36, 36);
+}
+.search-submit {
+    display:none;
+}
+.search-form {
+    display: none;
+}
+.header-search .screen-reader-text {
+    display:none;
+}
+.wraper {
+    overflow: hidden;
+    width: 960px;
+    margin: 0 auto;
+}
+#container {
+    float:left;
+    width: 750px;
+    padding: 15px;
+}
+.sidebar {
+    float: right;
+}
+#container h2 a {
+    text-decoration: none;
+    color: #3D3D3D;
+}
+#container .postmetadata {
+    margin-top: 5px;
+    /*background-color: #414141;
+    box-shadow: 0 0 4px #000;*/
+    color: #006899;
+}
+#container .postmetadata a {
+    color: #006899;
+    text-decoration: none;
+}
+#container .postmetadata > span {
+    margin-right: 20px;
+    font-size: 14px;
+}
+#container .postmetadata > span i {
+    margin-right: 5px;
+}
+#container .post {
+    overflow: hidden;
+    margin-top: 30px;
+    padding: 10px;
+    box-shadow: 0px 0px 1px 1px #C4C4C4;
+    background-color: #eee;
+}
+#container .entry {
+    margin-top: 20px;
+}
+.post h2 {
+    font-size: 24px;
+}
+.post .read-more {
+    display: block;
+    float: right;
+    margin-right: 12px;
+    margin-top: 15px;
+    color: #eee;
+    padding: 6px;
+    font-size: 14px;
+    border-radius: 2px;
+    background-color: #006899;
+}
